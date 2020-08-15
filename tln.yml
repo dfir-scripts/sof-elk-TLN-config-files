@@ -1,0 +1,16 @@
+# /usr/local/sof-elk/lib/file-beat-inputs/tln.yml
+
+- type: log
+  paths:
+    - /logstash/tln/*/*/*/*/*
+    - /logstash/tln/*/*/*
+    - /logstash/tln/*/*/*
+    - /logstash/tln/*/*
+    - /logstash/tln/*
+  exclude_files: [ '\.gz$', '\.bz2$', '\.zip$' ]
+  exclude_lines: [ '^#' ]
+  close_inactive: 5m
+  fields_under_root: true
+  fields:
+    type: tln
+  tags: ['tln']
