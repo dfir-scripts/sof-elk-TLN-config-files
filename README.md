@@ -20,3 +20,4 @@ Copy TLN files from regripper or other sources to the directory:  /logstash/tln/
 
 ### From Kibana Import Saved Dashboards
 Objects > Saved Objects > Import > TLN-Dashboard.json
+Load TLN_DATA Dashboard to view data
