@@ -19,5 +19,5 @@ chmod 7777 /logstash/tln<br>
 Copy TLN files from regripper or other sources to the directory:  /logstash/tln/
 
 ### From Kibana Import Saved Dashboards
-Objects > Saved Objects > Import > TLN-Dashboard.json
+Objects > Saved Objects > Import > TLN-Dashboard.json<br>
 Load TLN_DATA Dashboard to view data
