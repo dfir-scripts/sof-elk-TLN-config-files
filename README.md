@@ -35,6 +35,7 @@ The following configuration files are provided:
 - `tln-template.json`: Elasticsearch index template
 
 ## Deployment Instructions
+The included file install.sh performs all of the the following install steps automatically.
 
 ### 1. Deploy Filebeat Configuration
 
