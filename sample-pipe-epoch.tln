@@ -1,0 +1,24 @@
+# Format 1: Pipe-delimited with epoch timestamp (original TLN format)
+# This file contains only pipe-delimited entries with Unix epoch timestamps
+# File expanded to exceed 2048 bytes for Filebeat 9.0 compatibility
+
+1123619888|EVT|PETER|S-1-5-18|Userenv/1517;EVENTLOG_WARNING_TYPE;PETER\Harlan - Windows could not load the user profile
+1644492800|REG|WORKSTATION1|jdoe|HKCU\Software\Microsoft\Windows\CurrentVersion\Run|OneDrive - Registry key modified for startup application
+1609459200|FS|SERVER01|admin|C:\Windows\System32\config\SAM modified - Security Accounts Manager database accessed
+1577836800|NET|192.168.1.100|SYSTEM|Connection established to 10.0.0.50:443 - Outbound HTTPS connection detected
+1546300800|EVT|LAPTOP-ABC|user1|Security/4624;Logon Type 2;user1 logged on - Interactive logon event recorded
+1514764800|REG|DESKTOP-XYZ|administrator|HKLM\System\CurrentControlSet\Services\Tcpip\Parameters - Network configuration modified
+1483228800|FS|FILESERVER|backup|D:\Shares\Documents\report.docx created - New document file created on network share
+1451606400|APP|WEBSERVER|www-data|Apache access.log;GET /admin/login.php;200 - Administrative login page accessed successfully
+1420070400|EVT|EXCHANGE01|postmaster|Application/1000;MSExchangeIS;Information Store started - Exchange server service initialization
+1388534400|FS|NAS01|storage_admin|/mnt/backup/full_backup_2013.tar.gz - Backup archive created on network storage
+1356998400|NET|FIREWALL|security|Blocked inbound connection from 203.0.113.42:4444 - Suspicious port blocked by firewall
+1325462400|REG|WORKSTATION2|alice|HKCU\Software\Microsoft\Internet Explorer\Main - Browser homepage setting modified
+1293926400|EVT|SQLSERVER|sa|Application/17055;SQL Server startup complete - Database engine ready for connections
+1262390400|FS|BACKUP01|backup_admin|/var/backups/mysql/dump_20100101.sql.gz - Database backup file created
+1230854400|NET|ROUTER|admin|Configuration change: ACL updated for subnet 10.0.0.0/24 - Network access control modified
+1199318400|REG|LAPTOP-GHI|user3|HKLM\Software\Microsoft\Windows Defender\Exclusions\Paths - Antivirus exclusion added
+1167782400|APP|APACHE|root|Server restart: graceful reload of configuration - Web server configuration reloaded
+1136246400|EVT|DC01|Administrator|Security/4768;Kerberos TGT requested - Domain authentication ticket issued
+1104710400|FS|WORKSTATION4|dave|C:\Program Files\CustomApp\config.ini modified - Application configuration file changed
+1073174400|NET|VPN|vpnuser|IPSec tunnel established to remote office 192.168.100.0/24 - Site-to-site VPN connected

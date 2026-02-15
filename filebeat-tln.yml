@@ -1,0 +1,12 @@
+- type: filestream
+  id: tln-timeline-filestream
+  enabled: true
+  paths:
+    - /logstash/tln/*.[tT][lL][nN]
+    - /logstash/tln/**/*.[tT][lL][nN]
+    - /logstash/tln/*.[cC][sS][vV]
+    - /logstash/tln/**/*.[cC][sS][vV]
+  fields:
+    labels.type: tln
+  fields_under_root: true
+  tags: ["tln", "timeline", "forensics"]

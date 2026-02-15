@@ -1,0 +1,39 @@
+{
+  "index_patterns": ["tln-*"],
+  "template": {
+    "settings": {
+      "number_of_shards": 1,
+      "number_of_replicas": 1
+    },
+    "mappings": {
+      "properties": {
+        "@timestamp": { "type": "date" },
+        "tln": {
+          "properties": {
+            "time_epoch": { "type": "long" },
+            "source": { "type": "keyword" },
+            "host": { "type": "keyword" },
+            "user": { "type": "keyword" },
+            "description": {
+              "type": "text",
+              "fields": {
+                "keyword": { "type": "keyword", "ignore_above": 256 }
+              }
+            },
+            "description_parts": { "type": "keyword" }
+          }
+        },
+        "labels": {
+          "properties": {
+            "type": { "type": "keyword" }
+          }
+        },
+        "event": {
+          "properties": {
+            "dataset": { "type": "keyword" }
+          }
+        }
+      }
+    }
+  }
+}

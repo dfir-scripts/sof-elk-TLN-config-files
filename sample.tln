@@ -1,0 +1,32 @@
+# Sample TLN file demonstrating both supported formats
+# Lines starting with # are comments and will be ignored by Logstash
+# This file is expanded to exceed 2048 bytes to meet Filebeat 9.0 filestream requirements
+# Filebeat 9.0 uses fingerprint-based file identification and only ingests files >= 1024 bytes by default
+
+# Format 1: Pipe-delimited with epoch timestamp (original format)
+1123619888|EVT|PETER|S-1-5-18|Userenv/1517;EVENTLOG_WARNING_TYPE;PETER\Harlan - Windows could not load the user profile
+1644492800|REG|WORKSTATION1|jdoe|HKCU\Software\Microsoft\Windows\CurrentVersion\Run|OneDrive - Registry key modified for startup application
+1609459200|FS|SERVER01|admin|C:\Windows\System32\config\SAM modified - Security Accounts Manager database accessed
+1577836800|NET|192.168.1.100|SYSTEM|Connection established to 10.0.0.50:443 - Outbound HTTPS connection detected
+1546300800|EVT|LAPTOP-ABC|user1|Security/4624;Logon Type 2;user1 logged on - Interactive logon event recorded
+1514764800|REG|DESKTOP-XYZ|administrator|HKLM\System\CurrentControlSet\Services\Tcpip\Parameters - Network configuration modified
+1483228800|FS|FILESERVER|backup|D:\Shares\Documents\report.docx created - New document file created on network share
+1451606400|APP|WEBSERVER|www-data|Apache access.log;GET /admin/login.php;200 - Administrative login page accessed successfully
+1420070400|EVT|EXCHANGE01|postmaster|Application/1000;MSExchangeIS;Information Store started - Exchange server service initialization
+1388534400|FS|NAS01|storage_admin|/mnt/backup/full_backup_2013.tar.gz - Backup archive created on network storage
+1356998400|NET|FIREWALL|security|Blocked inbound connection from 203.0.113.42:4444 - Suspicious port blocked by firewall
+1325462400|REG|WORKSTATION2|alice|HKCU\Software\Microsoft\Internet Explorer\Main - Browser homepage setting modified
+
+# Format 2: Comma-delimited with formatted timestamp (YYYY-MM-DD HH:MM:SS)
+2023-01-01 12:00:00,EVT,WORKSTATION2,alice,Application started successfully - User launched business application
+2023-01-01 12:15:30,FS,NAS01,bob,File uploaded: /backup/data.zip - Compressed archive uploaded to backup location
+2023-01-01 12:30:45,NET,FIREWALL,system,Blocked connection from 203.0.113.42 - Malicious IP address blocked by security policy
+2023-01-01 13:00:00,REG,PC-FORENSICS,investigator,Registry hive exported for analysis - Forensic examination of system registry
+2023-02-14 08:00:00,APP,WEBSERVER,www-data,Apache access.log;GET /admin/login.php;200 - Administrative interface accessed
+2023-03-15 09:30:00,EVT,MAILSERVER,exchange_admin,Transport service started - Email routing service initialization complete
+2023-04-20 14:45:00,FS,WORKSTATION3,charlie,C:\Users\charlie\Documents\confidential.xlsx opened - Sensitive document accessed
+2023-05-10 16:20:00,NET,PROXY,squid,HTTP request to malware.example.com blocked - Web filtering prevented malicious site access
+2023-06-05 10:00:00,REG,LAPTOP-DEF,user2,HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate - Group policy settings applied
+2023-07-18 11:30:00,APP,DATABASE,dbadmin,SQL query executed: SELECT * FROM users WHERE admin=1 - Database administrative query
+2023-08-22 13:15:00,EVT,DOMAINCTRL,Administrator,Security/4672;Special privileges assigned to new logon - Elevated privileges granted
+2023-09-30 15:45:00,FS,FILESERVER2,backup_svc,Incremental backup completed: 15.2 GB transferred - Automated backup job finished

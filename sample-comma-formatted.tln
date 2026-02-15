@@ -1,0 +1,24 @@
+# Format 2: Comma-delimited with formatted timestamp (YYYY-MM-DD HH:MM:SS)
+# This file contains only comma-delimited entries with formatted timestamps
+# File expanded to exceed 2048 bytes for Filebeat 9.0 compatibility
+
+2005-08-10 01:04:48,EVT,PETER,S-1-5-18,Userenv/1517;EVENTLOG_WARNING_TYPE;PETER\Harlan - Windows could not load the user profile
+2022-02-10 00:00:00,REG,WORKSTATION1,jdoe,HKCU\Software\Microsoft\Windows\CurrentVersion\Run|OneDrive - Registry key modified for startup
+2020-12-31 12:00:00,FS,SERVER01,admin,C:\Windows\System32\config\SAM modified - Security Accounts Manager database accessed
+2020-01-01 00:00:00,NET,192.168.1.100,SYSTEM,Connection established to 10.0.0.50:443 - Outbound HTTPS connection detected
+2019-01-01 00:00:00,EVT,LAPTOP-ABC,user1,Security/4624;Logon Type 2;user1 logged on - Interactive logon event recorded
+2018-01-01 00:00:00,REG,DESKTOP-XYZ,administrator,HKLM\System\CurrentControlSet\Services\Tcpip\Parameters - Network configuration
+2017-01-01 00:00:00,FS,FILESERVER,backup,D:\Shares\Documents\report.docx created - New document file created on network share
+2016-01-01 00:00:00,APP,WEBSERVER,www-data,Apache access.log;GET /admin/login.php;200 - Administrative login page accessed
+2015-01-01 00:00:00,EVT,EXCHANGE01,postmaster,Application/1000;MSExchangeIS;Information Store started - Exchange server started
+2014-01-01 00:00:00,FS,NAS01,storage_admin,/mnt/backup/full_backup_2014.tar.gz - Backup archive created on network storage
+2013-01-01 00:00:00,NET,FIREWALL,security,Blocked inbound connection from 203.0.113.42:4444 - Suspicious port blocked by firewall
+2012-01-01 00:00:00,REG,WORKSTATION2,alice,HKCU\Software\Microsoft\Internet Explorer\Main - Browser homepage setting modified
+2023-01-15 09:30:00,EVT,MAILSERVER,exchange_admin,Transport service started - Email routing service initialization complete
+2023-02-20 10:45:00,FS,WORKSTATION3,charlie,C:\Users\charlie\Documents\confidential.xlsx opened - Sensitive document accessed
+2023-03-25 11:20:00,NET,PROXY,squid,HTTP request to malware.example.com blocked - Web filtering prevented malicious site access
+2023-04-10 14:30:00,REG,LAPTOP-DEF,user2,HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate - Group policy settings applied
+2023-05-18 15:45:00,APP,DATABASE,dbadmin,SQL query executed: SELECT * FROM users WHERE admin=1 - Database administrative query
+2023-06-22 16:00:00,EVT,DOMAINCTRL,Administrator,Security/4672;Special privileges assigned to new logon - Elevated privileges granted
+2023-07-30 17:15:00,FS,FILESERVER2,backup_svc,Incremental backup completed: 15.2 GB transferred - Automated backup job finished
+2023-08-14 18:30:00,NET,LOADBALANCER,lb_admin,Health check failed for backend server 10.0.1.50 - Server removed from pool
